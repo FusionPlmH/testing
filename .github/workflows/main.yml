@@ -26,7 +26,7 @@ jobs:
       run: sudo apt install -y liblz4-tool
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: lz4 -d abl.elf.lz4
+      run: lz4 -d -q abl.elf.lz4
 
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2

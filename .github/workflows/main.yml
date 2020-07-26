@@ -26,7 +26,7 @@ jobs:
       run: sudo apt install -y p7zip-full
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: lz4 -dc G9550.img.tar.lz4
+      run: 7z e G9550.img.tar.lz4
 
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2

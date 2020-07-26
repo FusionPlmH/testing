@@ -25,11 +25,17 @@ jobs:
     - name: p
       run: git clone https://github.com/lz4/lz4.git
     
+    - name : wsd
+      run: cd lz4
+    
     - name: q
       run: make
     
     - name : d
       run: make install
+    
+    - name : cd 
+      run: cd /
     # Runs a single command using the runners shell
     - name: Run a one-line script
       run: lz4 -d -q abl.elf.lz4
